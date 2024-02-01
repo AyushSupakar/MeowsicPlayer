@@ -523,21 +523,21 @@ input[type="range"]::-moz-range-thumb {
         <div id ="div1">
             <div class="space1"><span class="dec">Songs Playlist</span></div>
             <div class="songlist">
-                <li id="1" ><img src="./images/1.jpg" alt="" id="1"> Tera Hone Laga Hun <img src="./images/musicplay.gif" alt="" class="mp" id="1"> </li>
-                <li id="2" ><img src="./images/2.jpg" alt="" id="2"> Thoda Thoda <img src="./images/musicplay.gif" alt="" class="mp" id="2"></li>
-                <li id="3" ><img src="./images/3.jpg" alt="" id="3"> Bheegi si Bhaagi si <img src="./images/musicplay.gif" alt="" class="mp" id="3"></li>
-                <li id="4" ><img src="./images/4.jpg" alt="" id="4"> Nazm Nazm <img src="./images/musicplay.gif" alt="" class="mp" id="4"></li>
-                <li id="5" ><img src="./images/5.jpg" alt="" id="5"> Hawayein <img src="./images/musicplay.gif" alt="" class="mp" id="5"></li>
-                <li id="6" ><img src="./images/6.jpg" alt="" id="6"> Tere Bina <img src="./images/musicplay.gif" alt="" class="mp" id="6"></li>
-                <li id="7" ><img src="./images/7.jpg" alt="" id="7"> Sau Baras <img src="./images/musicplay.gif" alt="" class="mp" id="7"></li>
-                <li id="8" ><img src="./images/8.jpg" alt="" id="8"> Raabta <img src="./images/musicplay.gif" alt="" class="mp" id="8"></li>
-                <li id="9" ><img src="./images/9.jpg" alt="" id="9"> Surili Akhiyon Wali <img src="./images/musicplay.gif" alt="" class="mp" id="9"></li>
-                <li id="10" ><img src="./images/10.jpg" alt="" id="10"> Oh My Love <img src="./images/musicplay.gif" alt="" class="mp" id="10"></li>
-                <li id="11" ><img src="./images/11.jpg" alt="" id="11"> AA Raat Bhar <img src="./images/musicplay.gif" alt="" class="mp" id="11"></li>
-                <li id="12" ><img src="./images/12.jpg" alt="" id="12"> Sukoon Mila <img src="./images/musicplay.gif" alt="" class="mp" id="12"></li>
-                <li id="13" ><img src="./images/13.jpg" alt="" id="13"> Khuda Jane <img src="./images/musicplay.gif" alt="" class="mp" id="13"></li>
-                <li id="14" ><img src="./images/14.jpg" alt="" id="14"> Pee loon <img src="./images/musicplay.gif" alt="" class="mp" id="14"></li>
-                 <li id="15" ><img src="./images/15.jpg" alt="" id="15"> Sab Tera <img src="./images/musicplay.gif" alt="" class="mp" id="15"></li>
+                <li class="songlistli" id="1" ><img src="./images/1.jpg" alt="" id="1"> Tera Hone Laga Hun <img src="./images/musicplay.gif" alt="" class="mp" id="1"> </li>
+                <li class="songlistli" id="2" ><img src="./images/2.jpg" alt="" id="2"> Thoda Thoda <img src="./images/musicplay.gif" alt="" class="mp" id="2"></li>
+                <li class="songlistli" id="3" ><img src="./images/3.jpg" alt="" id="3"> Bheegi si Bhaagi si <img src="./images/musicplay.gif" alt="" class="mp" id="3"></li>
+                <li class="songlistli" id="4" ><img src="./images/4.jpg" alt="" id="4"> Nazm Nazm <img src="./images/musicplay.gif" alt="" class="mp" id="4"></li>
+                <li class="songlistli" id="5" ><img src="./images/5.jpg" alt="" id="5"> Hawayein <img src="./images/musicplay.gif" alt="" class="mp" id="5"></li>
+                <li class="songlistli" id="6" ><img src="./images/6.jpg" alt="" id="6"> Tere Bina <img src="./images/musicplay.gif" alt="" class="mp" id="6"></li>
+                <li class="songlistli" id="7" ><img src="./images/7.jpg" alt="" id="7"> Sau Baras <img src="./images/musicplay.gif" alt="" class="mp" id="7"></li>
+                <li class="songlistli" id="8" ><img src="./images/8.jpg" alt="" id="8"> Raabta <img src="./images/musicplay.gif" alt="" class="mp" id="8"></li>
+                <li class="songlistli" id="9" ><img src="./images/9.jpg" alt="" id="9"> Surili Akhiyon Wali <img src="./images/musicplay.gif" alt="" class="mp" id="9"></li>
+                <li class="songlistli" id="10" ><img src="./images/10.jpg" alt="" id="10"> Oh My Love <img src="./images/musicplay.gif" alt="" class="mp" id="10"></li>
+                <li class="songlistli" id="11" ><img src="./images/11.jpg" alt="" id="11"> AA Raat Bhar <img src="./images/musicplay.gif" alt="" class="mp" id="11"></li>
+                <li class="songlistli" id="12" ><img src="./images/12.jpg" alt="" id="12"> Sukoon Mila <img src="./images/musicplay.gif" alt="" class="mp" id="12"></li>
+                <li class="songlistli" id="13" ><img src="./images/13.jpg" alt="" id="13"> Khuda Jane <img src="./images/musicplay.gif" alt="" class="mp" id="13"></li>
+                <li class="songlistli" id="14" ><img src="./images/14.jpg" alt="" id="14"> Pee loon <img src="./images/musicplay.gif" alt="" class="mp" id="14"></li>
+                 <li class="songlistli" id="15" ><img src="./images/15.jpg" alt="" id="15"> Sab Tera <img src="./images/musicplay.gif" alt="" class="mp" id="15"></li>
                  
             </div>
             <div class="space2"></div>
@@ -628,7 +628,7 @@ var playsong = function(){
 };
 
 
-Array.from(document.getElementsByClassName("songlist")).forEach((element)=>{
+Array.from(document.getElementsByClassName("songlistli")).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         document.getElementsByClassName('mp')[index-1].style.opacity="0";
        // document.getElementById('cdp').style.opacity="0";
